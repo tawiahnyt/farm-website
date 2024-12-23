@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
+import DropDownMenu from "./DropDownMenu";
 
 const NavBar = () => {
   return (
@@ -27,6 +28,10 @@ const NavBar = () => {
             <Link to="/contact-us">Contact Us</Link>
           </li>
         </ul>
+        <div className="max-lg:ml-auto max-lg:px-5">
+          {/* <button>Contact Us</button> */}
+          <DropDownMenu />
+        </div>
         <div className="hidden max-lg:block">
           <CgMenu className="w-8 h-8" />
         </div>
