@@ -1,7 +1,9 @@
+import Hero from "../components/Hero"
 
 const AboutUs = () => {
   return (
-    <div className="">AboutUS
+    <div className="">
+      <Hero className={'h-[550px]'} />
     </div>
   )
 }

@@ -1,12 +1,12 @@
 /** @format */
 
-import { heroImg } from "../constants";
+import Hero from "../components/Hero";
 
 const Home = () => {
   return (
     <main>
-      <div className="w-full bg-center bg-cover">
-        <img src={heroImg} alt="Hero img" className="h-screen object-cover w-full " />
+      <div>
+        <Hero className={"h-screen"} />
       </div>
       <div className="py-4 text-center justify-center">
         <h1>Testing the text</h1>
