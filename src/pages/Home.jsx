@@ -47,7 +47,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 sm:grid-cols-12">
             {ourValues.map((value) => (
               <div key={value} className="p-8 pb-4 text-center justify-center">
-                <h2 className="text-6xl pb-3 text-green-600 flex justify-center">
+                <h2 className="text-5xl pb-3 text-green-600 flex justify-center">
                   <value.icons />
                 </h2>
                 <h3 className="text-2xl font-semibold pb-2">{value.title}</h3>
