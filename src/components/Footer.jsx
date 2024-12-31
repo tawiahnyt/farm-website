@@ -1,66 +1,19 @@
 /** @format */
 
-import { footerLinks, socialMedia } from "../constants";
-import { copyrightSign } from "../assets/icons";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="p-5 bg-green-700">
-      <div className="flex items-start justify-between gap-20 flex-wrap max-lg:flex-col">
-        <div className="flex flex-col items-start">
-          <Link to="/">
+    <footer className="bg-gray-50">
+      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <div className="flex justify-center text-teal-600 sm:justify-start">
             <h1>Logo</h1>
-          </Link>
-          <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
-            Get shoes ready for the new term at your nearest Nike store. Find
-            Your perfect Size In Store. Get Rewards
-          </p>
-          <div className="flex items-center gap-5 mt-8">
-            {socialMedia.map((icon) => (
-              <div
-                key={icon}
-                className="flex justify-center items-center w-12 h-12 bg-white rounded-full"
-              >
-                <img src={icon.src} alt={icon.alt} height={24} width={24} />
-              </div>
-            ))}
           </div>
-        </div>
 
-        <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
-          {footerLinks.map((section) => (
-            <div key={section}>
-              <h4 className="text-white font-montserrat text-2xl leading-normal font-medium bm-6">
-                {section.title}
-              </h4>
-              <ul>
-                {section.links.map((link) => (
-                  <li
-                    className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer"
-                    key={link.name}
-                  >
-                    <a href="#/"> {link.name} </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <p className="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right">
+            Copyright &copy; 2022. All rights reserved.
+          </p>
         </div>
-      </div>
-
-      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
-        <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
-          <img
-            src={copyrightSign}
-            width={20}
-            height={20}
-            className="rounded-full m-0"
-            alt="social icons"
-          />
-          <p>Copyright. All rights reserved.</p>
-        </div>
-        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
       </div>
     </footer>
   );

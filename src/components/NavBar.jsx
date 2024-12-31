@@ -6,12 +6,12 @@ import DropDownMenu from "./DropDownMenu";
 
 const NavBar = () => {
   return (
-    <header className="sm:px-16 px-8 py-6 fixed w-full bg-white shadow-md">
+    <header className="sm:px-16 px-8 py-6 z-10 w-full bg-white shadow-md fixed">
       <nav className="flex justify-between items-center">
         <Link to="/">
           <h1>Logo</h1>
         </Link>
-        <ul className="flex flex-1 justify-center items-center gap-16 max-lg:hidden">
+        <ul className="flex flex-1 justify-center items-center gap-16 max-lg:hidden font-semibold uppercase">
           <li>
             <Link to="/">Home</Link>
           </li>
