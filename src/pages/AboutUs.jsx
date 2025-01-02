@@ -1,13 +1,13 @@
 /** @format */
 
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
+// import Footer from "../components/Footer";
+// import Hero from "../components/Hero";
 import { aboutUsImg, ourGoals } from "../constants";
 
 const AboutUs = () => {
   return (
     <main>
-      <div className="">
+      {/* <div className="">
         <Hero className={"md:h-[550px] h-[350px]"} />
         <div className="absolute items-center justify-center px-4 pt-20 pb-16 mx-auto my-auto text-center sm:top-40 top-24 max-w-7xl sm:px-6 lg:px-8 lg:pt-32 inset-10">
           <h1 className="mt-4 font-serif text-5xl tracking-tight text-balance sm:text-6xl">
@@ -17,30 +17,30 @@ const AboutUs = () => {
             <a href="/">Home</a> / About Us
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="lg:flex md:px-[15%] px-[5%] py-32">
-        <img
-          src={aboutUsImg}
-          alt="about us"
-          // width={"500px"}
-          className="mx-auto"
-        />
-        <div className="w-full sm:px-10 md:my-auto">
-          <div className="justify-center pt-4 pb-10 text-center">
-            <h2 className="pt-2 pb-2 font-semibold font-mono text-4xl text-left">
-              About Us
-            </h2>
-            <p className="mt-6 text-lg text-left text-gray-500 sm:text-xl/8">
-              XYZ Food Ltd. Is an international company operating in West and
-              Central Africa focusing on improving quality of life and
-              well-being through improvement in agriculture.
-            </p>
-            <p className="mt-6 text-lg text-left text-gray-500 sm:text-xl/8">
-              Provider of high-quality agricultural produce and spices, we are
-              dedicated to delivering fresh, organic, and sustainably sourced
-              products to meet the growing demands of our customers.
-            </p>
+      <div className="py-20  md:px-[15%] px-[5%]">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+          <div>
+            <img src={aboutUsImg} className="rounded" alt="" />
+          </div>
+          <div>
+            <div className="max-w-lg md:max-w-none">
+              <h2 className="text-2xl font-mono font-semibold sm:text-4xl">
+                About Us
+              </h2>
+
+              <p className="mt-6 text-lg text-left text-gray-500 sm:text-xl/8">
+                XYZ Food Ltd. Is an international company operating in West and
+                Central Africa focusing on improving quality of life and
+                well-being through improvement in agriculture.
+              </p>
+              <p className="mt-6 text-lg text-left text-gray-500 sm:text-xl/8">
+                Provider of high-quality agricultural produce and spices, we are
+                dedicated to delivering fresh, organic, and sustainably sourced
+                products to meet the growing demands of our customers.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ const AboutUs = () => {
           protect the planet.
         </p>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };

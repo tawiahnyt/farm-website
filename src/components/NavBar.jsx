@@ -27,6 +27,9 @@ const NavBar = () => {
           <li>
             <Link to="/contact-us">Contact Us</Link>
           </li>
+          <li>
+            <Link to="/one-page">One Page</Link>
+          </li>
         </ul>
         <div className="max-lg:ml-auto max-lg:px-5">
           {/* <button>Contact Us</button> */}

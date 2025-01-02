@@ -5,17 +5,19 @@ import {
   FaUsers,
   FaTractor,
   FaHandshake,
+  FaLightbulb,
 } from "react-icons/fa";
 import { IoShieldHalfSharp } from "react-icons/io5";
 import { PiPlantFill } from "react-icons/pi";
-import { FaLightbulb } from "react-icons/fa";
 import { FaPeopleRoof } from "react-icons/fa6";
-
-
 
 import heroImg from "../assets/images/hero-img.jpeg";
 import sectionImg from "../assets/images/section-img.jpg";
 import aboutUsImg from "../assets/images/about-img.jpg";
+import fruitImg from "../assets/images/fruit-img.jpg"
+import vegetableImg from "../assets/images/vegetable-img.jpg"
+import herbImg from "../assets/images/herbs-and-spice-img.jpg"
+import seedlingImg from "../assets/images/seedlings-img.jpeg"
 
 const ourValues = [
   {
@@ -83,43 +85,30 @@ const ourGoals = [
   },
 ];
 
-// const socialMedia = [
-//   { src: facebook, alt: "facebook logo" },
-//   { src: twitter, alt: "twitter logo" },
-//   { src: instagram, alt: "instagram logo" },
-// ];
+const serviceItems = [
+  {
+    img: vegetableImg,
+    title: "Fresh Vegetables",
+    description:
+      "Eating a rainbow of vegetables not only delights the palate but also provides a wealth of antioxidants that promote well-being.",
+  },
+  {
+    img: fruitImg,
+    title: "Fresh Fruits",
+    description:
+      "Whether you're making a refreshing smoothie or a vibrant salad, our fruits are sure to elevate your meals.",
+  },
+  {
+    img: herbImg,
+    title: "Herbs and Spice",
+    description:
+      "Elevate your cooking with fresh herbs like basil and cilantro, which enhance flavor and provide health benefits for delicious, nutritious meals.",
+  },
+  {
+    img: seedlingImg,
+    title: "Seedlings",
+    description: "Explore our variety of seedlings.",
+  },
+];
 
-// const footerLinks = [
-//   {
-//     title: "Products",
-//     links: [
-//       { name: "Air Force 1", link: "/" },
-//       { name: "Air Max 1", link: "/" },
-//       { name: "Air Jordan 1", link: "/" },
-//       { name: "Air Force 2", link: "/" },
-//       { name: "Nike Waffle Racer", link: "/" },
-//       { name: "Nike Cortez", link: "/" },
-//     ],
-//   },
-//   {
-//     title: "Help",
-//     links: [
-//       { name: "About us", link: "/" },
-//       { name: "FAQs", link: "/" },
-//       { name: "How it works", link: "/" },
-//       { name: "Privacy policy", link: "/" },
-//       { name: "Payment policy", link: "/" },
-//     ],
-//   },
-//   {
-//     title: "Get in touch",
-//     links: [
-//       { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-//       { name: "+92554862354", link: "tel:+92554862354" },
-//     ],
-//   },
-// ];
-
-
-export { heroImg, sectionImg, ourValues, aboutUsImg, ourGoals, };
-
+export { heroImg, sectionImg, ourValues, aboutUsImg, ourGoals, serviceItems };

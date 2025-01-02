@@ -7,19 +7,21 @@ import Products from "./pages/Products";
 import AboutUs from "./pages/AboutUs";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import OnePage from "./pages/OnePage";
 
 
 function App() {
   return (
     <main className="">
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-        </Routes>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/one-page" element={<OnePage />} />
+      </Routes>
     </main>
   );
 }

@@ -1,7 +1,7 @@
 /** @format */
 
 import Hero from "../components/Hero";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import { ourValues, sectionImg } from "../constants";
 
 const Home = () => {
@@ -65,7 +65,7 @@ const Home = () => {
           </div>
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

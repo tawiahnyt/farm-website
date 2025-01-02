@@ -1,11 +1,14 @@
 /** @format */
 
-import Hero from "../components/Hero";
+// import Footer from "../components/Footer";
+// import Hero from "../components/Hero";
+import ServiceCard from "../components/ServiceCard";
+import { serviceItems } from "../constants";
 
 const Services = () => {
   return (
     <main>
-      <div className="">
+      {/* <div className="">
         <Hero className={"md:h-[550px] h-[350px]"} />
         <div className="absolute items-center justify-center px-4 pt-20 pb-16 mx-auto my-auto text-center sm:top-40 top-24 max-w-7xl sm:px-6 lg:px-8 lg:pt-32 inset-10">
           <h1 className="mt-4 font-serif text-5xl tracking-tight text-balance sm:text-6xl">
@@ -15,9 +18,9 @@ const Services = () => {
             <a href="/">Home</a> / Services
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className=" md:px-[15%] px-[5%] text-center justify-center mb-20 p-28">
+      <div className=" md:px-[15%] px-[5%] text-center justify-center py-20">
         <h2 className="pb-4 font-semibold font-mono text-4xl">Our Services</h2>
         <p className="mt-4 text-lg sm:text-xl/8 text-gray-500">
           At XYZ Food Ltd, we pride ourselves on being your premier source of
@@ -38,6 +41,13 @@ const Services = () => {
           Taste the tradition, Trust the Quality Choose XYZ Food
         </p>
       </div>
+
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 px-10 gap-6">
+        {serviceItems.map((item) => (
+          <ServiceCard key={item} image={item.img} heading={item.title} text={item.description} />
+        ))}
+      </div>
+      {/* <Footer /> */}
     </main>
   );
 };
