@@ -12,7 +12,7 @@ const Hero = ({ title, subtitle, button }) => {
     //   />
     // </div>
     <section
-      className={`bg-[url('/src/assets/images/hero-img.jpeg')] bg-center bg-cover bg-no-repeat ${
+      className={`bg-[url('/src/assets/images/hero-img.webp')] bg-center bg-cover bg-no-repeat ${
         button ? "" : "h-[60vh]"
       }`}
     >
@@ -26,20 +26,20 @@ const Hero = ({ title, subtitle, button }) => {
             {title}
           </h1>
 
-          <p className="mt-4 sm:text-xl/relaxed font-semibold">{subtitle}</p>
+          <p className="mt-4 sm:text-xl/relaxed font-medium">{subtitle}</p>
 
           {button && (
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 className="block w-full rounded-full bg-green-600 px-12 py-3 text-sm font-medium text-white shadow sm:w-auto border hover:text-green-600 hover:bg-transparent hover:border-green-600"
-                href="/"
+                href="#values"
               >
                 Get Started
               </a>
 
               <a
                 className="block w-full rounded-full hover:bg-green-600 hover:text-white px-12 py-3 text-sm font-medium text-green-600 border border-green-600 shadow sm:w-auto"
-                href="/"
+                href="/about-us"
               >
                 Learn More
               </a>

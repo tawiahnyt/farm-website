@@ -1,13 +1,12 @@
 /** @format */
 
 import Home from "./pages/Home";
-import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
 import Products from "./pages/Products";
 import AboutUs from "./pages/AboutUs";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import OnePage from "./pages/OnePage";
+import GreenDevelopment from "./pages/GreenDevelopment";
 
 
 function App() {
@@ -17,10 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/products-and-services" element={<Products />} />
         <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/one-page" element={<OnePage />} />
+        <Route path="/green-development" element={<GreenDevelopment />} />
       </Routes>
     </main>
   );

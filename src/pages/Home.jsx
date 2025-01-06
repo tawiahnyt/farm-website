@@ -1,23 +1,22 @@
 /** @format */
 
 import Hero from "../components/Hero";
-// import Footer from "../components/Footer";
-import { ourValues, sectionImg } from "../constants";
+import ServiceCard from "../components/ServiceCard";
+import { ourValues, sectionImg, serviceItems } from "../constants";
 
 const Home = () => {
   return (
     <>
       <main>
-        <div className="">
-          <Hero
-            title={"XYZ FOODS LIMITED"}
-            subtitle={
-              "XYZ Food Ltd. Is an international company operating in West and Central Africa focusing on improving quality of life and  well-being through improvement in agriculture."
-            }
-            button
-          />
+        <Hero
+          title={"XYZ FOODS LIMITED"}
+          subtitle={
+            "XYZ Food Ltd. Is an international company operating in West and Central Africa focusing on improving quality of life and  well-being through improvement in agriculture."
+          }
+          button
+        />
 
-          {/* <div className="absolute lg:top-56 top-40 items-center justify-center mx-auto max-w-[1440px] px-4 pb-6 pt-20 text-center sm:px-6 lg:px-48 lg:pt-32 inset-10">
+        {/* <div className="absolute lg:top-56 top-40 items-center justify-center mx-auto max-w-[1440px] px-4 pb-6 pt-20 text-center sm:px-6 lg:px-48 lg:pt-32 inset-10">
             <h1 className="mt-4 text-balance text-5xl font-serif font-semibold tracking-tight sm:text-6xl">
               XYZ FOODS LIMITED
             </h1>
@@ -34,10 +33,9 @@ const Home = () => {
               </a>
             </div>
           </div> */}
-        </div>
 
         <div className="my-20 px-6 lg:px-10 3xl:px-0 mx-auto max-w-[1440px] text-center justify-center">
-          <h1 className="font-mono font-semibold text-5xl p-10">
+          <h1 className="font-mono font-semibold text-3xl p-10">
             Why Choose XYZ Foods Ltd?
           </h1>
           <div id="values" className="flex">
@@ -61,13 +59,43 @@ const Home = () => {
                     <h3 className="font-serif text-2xl font-semibold">
                       {value.title}
                     </h3>
-                    <p className="mt-6 text-lg text-pretty text-gray-500 sm:text-xl/8">
+                    <p className="mt-6 text-lg text-pretty font-medium text-gray-500 sm:text-xl/8">
                       {value.description}
                     </p>
                   </div>
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="my-20 px-6 lg:px-10 3xl:px-0 mx-auto max-w-[1440px] text-center justify-center">
+          <h1 className="font-mono font-semibold text-3xl pt-10">
+            Our Products
+          </h1>
+
+          <p className="p-4 text-lg font-medium text-gray-500">
+            4 Types of products to transform our communities.
+          </p>
+
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2">
+            {serviceItems.map((item) => (
+              <ServiceCard
+                key={item}
+                image={item.img}
+                heading={item.title}
+                // text={item.description}
+              />
+            ))}
+          </div>
+
+          <div className="mt-5">
+            <a
+              className="rounded-full hover:bg-green-600 hover:text-white px-12 py-3 text-sm font-medium text-green-600 border border-green-600 shadow sm:w-auto"
+              href="/products-and-services"
+            >
+              Explore our products
+            </a>
           </div>
         </div>
       </main>

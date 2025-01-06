@@ -19,16 +19,13 @@ const NavBar = () => {
             <Link to="/about-us">About Us</Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to="/products-and-services">Products & Services</Link>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <Link to="/green-development">Green Development</Link>
           </li>
           <li>
             <Link to="/contact-us">Contact Us</Link>
-          </li>
-          <li>
-            <Link to="/one-page">One Page</Link>
           </li>
         </ul>
         <div className="max-lg:ml-auto max-lg:px-5">

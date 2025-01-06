@@ -1,8 +1,6 @@
 /** @format */
 
 import Hero from "../components/Hero";
-import ServiceCard from "../components/ServiceCard";
-import { serviceItems } from "../constants";
 
 const Services = () => {
   return (
@@ -32,7 +30,7 @@ const Services = () => {
 
       <div className="my-20 px-6 lg:px-10 3xl:px-0 mx-auto max-w-[1440px] text-center justify-center0">
         <h2 className="pb-4 font-semibold font-mono text-4xl">Our Services</h2>
-        <p className="mt-4 text-lg sm:text-xl/8 text-gray-500">
+        <p className="mt-4 text-lg sm:text-xl/8 text-gray-500 font-medium">
           At XYZ Food Ltd, we pride ourselves on being your premier source of
           top-quality spices and vegetables. Our products are meticulously
           produced and crafted to bring the authentic state of African cuisine
@@ -40,7 +38,7 @@ const Services = () => {
           flavors that only XYZ Food can offer. Experience the difference that
           quality makes. Your culinary journey to Africa begins here!!!
         </p>
-        <p className="mt-4 text-lg sm:text-xl/8 text-gray-500">
+        <p className="mt-4 text-lg sm:text-xl/8 text-gray-500 font-medium">
           XYZ limited exports processed products within African countries,
           Europe and Americas, such as Plantain fufu, plantain chips from
           Plantains, Cassava flour, Attieke fresh and dehydrated, Gari, Placali
@@ -50,17 +48,6 @@ const Services = () => {
         <p className="mt-4 text-lg sm:text-xl/8 text-gray-500 italic font-bold">
           Taste the tradition, Trust the Quality Choose XYZ Food
         </p>
-      </div>
-
-      <div className="px-6 lg:px-10 3xl:px-0 mx-auto max-w-[1440px] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2">
-        {serviceItems.map((item) => (
-          <ServiceCard
-            key={item}
-            image={item.img}
-            heading={item.title}
-            text={item.description}
-          />
-        ))}
       </div>
     </main>
   );
