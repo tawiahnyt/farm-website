@@ -11,13 +11,13 @@ import { IoShieldHalfSharp } from "react-icons/io5";
 import { PiPlantFill } from "react-icons/pi";
 import { FaPeopleRoof } from "react-icons/fa6";
 
-import heroImg from "../assets/images/hero-img.jpeg";
-import sectionImg from "../assets/images/section-img.jpg";
-import aboutUsImg from "../assets/images/about-img.jpg";
-import fruitImg from "../assets/images/fruit-img.jpg"
-import vegetableImg from "../assets/images/vegetable-img.jpg"
-import herbImg from "../assets/images/herbs-and-spice-img.jpg"
-import seedlingImg from "../assets/images/seedlings-img.jpeg"
+import heroImg from "../assets/images/hero-img.webp";
+import sectionImg from "../assets/images/section-img.webp";
+import aboutUsImg from "../assets/images/about-img.webp";
+import fruitImg from "../assets/images/fruit-img.webp"
+import vegetableImg from "../assets/images/vegetable-img.webp"
+import herbImg from "../assets/images/herbs-and-spice-img.webp"
+import seedlingImg from "../assets/images/seedlings-img.webp"
 
 const ourValues = [
   {

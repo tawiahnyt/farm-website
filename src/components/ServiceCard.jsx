@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const ServiceCard = ({ image, heading, text }) => {
   return (
-    <div className="block rounded-lg p-4 shadow-md hover:shadow-2xl cursor-pointer">
+    <div className="block rounded-lg p-4 shadow-md hover:shadow-2xl cursor-pointer border border-gray-200">
       <img alt="" src={image} className="h-64 w-full rounded-md object-cover" />
 
       <div className="mt-4">
