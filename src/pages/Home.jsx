@@ -1,5 +1,6 @@
 /** @format */
 
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import ServiceCard from "../components/ServiceCard";
 import { ourValues, sectionImg, serviceItems } from "../constants";
@@ -99,7 +100,7 @@ const Home = () => {
           </div>
         </div>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

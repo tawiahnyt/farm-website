@@ -1,5 +1,6 @@
 /** @format */
 
+import Footer from "../components/Footer";
 import GreenHero from "../components/GreenHero";
 import { ourGoals } from "../constants";
 
@@ -47,6 +48,8 @@ const GreenDevelopment = () => {
           ))}
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };

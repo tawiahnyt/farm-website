@@ -48,6 +48,7 @@ const Hero = ({ title, subtitle, button }) => {
         </div>
       </div>
     </section>
+    
   );
 };
 

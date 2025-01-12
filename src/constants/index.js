@@ -19,7 +19,7 @@ import vegetableImg from "../assets/images/vegetable-img.webp"
 import herbImg from "../assets/images/herbs-and-spice-img.webp"
 import seedlingImg from "../assets/images/seedlings-img.webp"
 
-const ourValues = [
+export const ourValues = [
   {
     icon: FaLeaf,
     title: "Quality and Health and Wellness",
@@ -46,7 +46,7 @@ const ourValues = [
   },
 ];
 
-const ourGoals = [
+export const ourGoals = [
   {
     icon: FaPeopleRoof,
     title: "Provide Affordable and Quality Food for Communities",
@@ -85,7 +85,7 @@ const ourGoals = [
   },
 ];
 
-const serviceItems = [
+export const serviceItems = [
   {
     img: vegetableImg,
     title: "Fresh Vegetables",
@@ -111,4 +111,35 @@ const serviceItems = [
   },
 ];
 
-export { heroImg, sectionImg, ourValues, aboutUsImg, ourGoals, serviceItems };
+export const footerLinks = [
+  {
+    title: "About",
+    links: [
+      { title: "How it works", url: "/" },
+      { title: "Featured", url: "/" },
+      { title: "Partnership", url: "/" },
+      { title: "Bussiness Relation", url: "/" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { title: "Events", url: "/" },
+      { title: "Blog", url: "/" },
+      { title: "Podcast", url: "/" },
+      { title: "Invite a friend", url: "/" },
+    ],
+  },
+  {
+    title: "Socials",
+    links: [
+      { title: "Discord", url: "/" },
+      { title: "Instagram", url: "/" },
+      { title: "Twitter", url: "/" },
+      { title: "Facebook", url: "/" },
+    ],
+  },
+];
+
+
+export { heroImg, sectionImg, aboutUsImg };

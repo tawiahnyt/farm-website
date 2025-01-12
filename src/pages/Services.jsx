@@ -1,33 +1,8 @@
 /** @format */
 
-import Hero from "../components/Hero";
-
 const Services = () => {
   return (
     <main>
-      <Hero
-        title={"Our Services"}
-        subtitle={
-          <>
-            <a href="/" className="font-semibold hover:text-white">
-              Home
-            </a>{" "}
-            {`<`} Our Services
-          </>
-        }
-      />
-      {/* <div className="">
-        
-        <div className="absolute items-center justify-center px-4 pt-20 pb-16 mx-auto my-auto text-center sm:top-40 top-24 max-w-7xl sm:px-6 lg:px-8 lg:pt-32 inset-10">
-          <h1 className="mt-4 font-serif text-5xl tracking-tight text-balance sm:text-6xl">
-            Services
-          </h1>
-          <p className="mt-6 text-lg text-pretty text-gray-500 sm:text-xl/8">
-            <a href="/">Home</a> / Services
-          </p>
-        </div>
-      </div> */}
-
       <div className="my-20 px-6 lg:px-10 3xl:px-0 mx-auto max-w-[1440px] text-center justify-center0">
         <h2 className="pb-4 font-semibold font-mono text-4xl">Our Services</h2>
         <p className="mt-4 text-lg sm:text-xl/8 text-gray-500 font-medium">
