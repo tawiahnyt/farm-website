@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import ServiceCard from "../components/ServiceCard";
 import { serviceItems } from "../constants";
-import Services from "./Services";
+// import Services from "./Services";
 
 const Products = () => {
   return (
@@ -43,7 +43,7 @@ const Products = () => {
           </p>
         </div>
 
-        {/* <div className="my-20 px-6 lg:px-10 3xl:px-0 mx-auto max-w-[1440px] text-center justify-center0">
+        <div className="my-20 px-6 lg:px-10 3xl:px-0 mx-auto max-w-[1440px] text-center justify-center0">
           <h2 className="pb-4 font-semibold font-mono text-4xl">
             Our Services
           </h2>
@@ -65,9 +65,9 @@ const Products = () => {
           <p className="mt-4 text-lg sm:text-xl/8 text-gray-500 italic font-bold">
             Taste the tradition, Trust the Quality Choose XYZ Food
           </p>
-        </div> */}
+        </div>
 
-        <Services />
+        {/* <Services /> */}
       </main>
 
       <Footer />
